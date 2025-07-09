@@ -9,9 +9,9 @@
 	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
+
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -29,7 +29,9 @@
 		}
 
 		.section-heading h2 {
-			font-family: 'Kaushan Script', cursive;
+
+			font-family: 'Abril Fatface', cursive;
+			font-weight: 400;
 			color: #333;
 			font-size: 36px;
 			margin-bottom: 20px;
@@ -50,15 +52,19 @@
 		}
 
 		.project-card:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-			/* Add shadow on hover */
+			transform: translateY(-8px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 		}
 
 		.project-image {
 			background-size: cover;
 			background-position: center;
-			height: 200px;
+			height: 220px;
+			transition: transform 0.3s ease;
+		}
+
+		.project-card:hover .project-image {
+			transform: scale(1.03);
 		}
 
 		.project-details {
@@ -82,23 +88,36 @@
 		}
 
 		.project-date {
-			font-size: 12px;
+			font-size: 13px;
+			font-weight: 500;
 			color: #999;
-			margin-bottom: 10px;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
 		}
 
 		.project-description {
-			color: #555;
-			font-size: 14px;
-			margin-bottom: 10px;
+			color: #444;
+			font-size: 15px;
+			line-height: 1.6;
+			margin-bottom: 12px;
+			font-family: 'Lato', sans-serif;
 		}
 
 		.project-tech {
-			display: block;
-			font-size: 12px;
-			color: #777;
+			display: inline-block;
+			font-size: 13px;
+			font-weight: 500;
+			color: #555;
+			background-color: #f0f0f0;
+			padding: 6px 10px;
+			border-radius: 5px;
 			margin-bottom: 15px;
+			margin-top: 10px;
+			letter-spacing: 0.3px;
+			font-family: 'Lato', sans-serif;
 		}
+
 
 		.project-link a {
 			text-decoration: none;
@@ -202,10 +221,10 @@
 						based applications, since they are easily accessible.</p>
 					<p>I have a creative mindset that allows me to find alternative ways to solve a problem.</p>
 					<p>Some of the key technologies that I have practical experience in during my academic journey
-						are Java, Spring MVC, Spring Boot, JavaScript, and React.js.</p>
+						are Java, Spring MVC, Spring Boot, JavaScript, React.js and Python.</p>
 
 					<p>
-						<a href="https://drive.google.com/file/d/1KVVCDGwU5H6IMfC0pCIB-uomarNClX1Q/view?usp=sharing"
+						<a href="https://1drv.ms/b/c/fb78b7a3e00d4545/ES77-xr4UeNBrrYHhkwP9m8BW-d4oEsvDdtyWtKbYOcZ8g?e=oNOgTf"
 							target="_blank">
 							<button type="button" class="btn btn-outline-secondary"
 								style="border: 2px solid black;">Resume</button>
@@ -273,7 +292,7 @@
 		<div class="container">
 			<div class="row text-center fh5co-heading">
 				<div class="col-md-12">
-					<h3>Work Experience</h3>
+					<h2><strong>Work Experience</strong></h2>
 				</div>
 			</div>
 			<ul class="timeline">
@@ -285,19 +304,27 @@
 							<span class="company">Gurugram, Haryana / Dec 21' - May 22'</span>
 						</div>
 						<div class="timeline-body">
-							<p><strong>Web Developer / Remote Internship Program</strong></p>
-							<ul>
-								<li>Developed a full-stack web application project with a digital approval system for
+							<h4 style="font-weight: 600; margin-bottom: 10px;">Web Developer – Remote Internship Program
+							</h4>
+
+							<ul style="padding-left: 20px; margin-bottom: 15px; line-height: 1.7;">
+								<li>Contributed to a full-stack web application for a digital flight approval system for
 									corporate travelers
-									using Angular, Java - Spring Boot, and MySQL Database.</li>
-								<li>Enhanced the digital approval system, improving approval times by 50%.</li>
-								<li>Created technical documentation for seamless knowledge transfer.</li>
-								<li>Collaborated with the team to boost system performance, achieving a 25% increase in
-									efficiency.</li>
+									using Angular, Java (Spring Boot), and MySQL.</li>
+								<li>Optimized the approval workflow, significantly reducing processing time and
+									improving system efficiency.
+								</li>
+								<li>Authored technical documentation to ensure smooth knowledge transfer and long-term
+									maintainability.</li>
+								<li>Actively participated in Agile ceremonies including daily stand-ups and sprint
+									planning sessions.</li>
 							</ul>
-							<p><strong>Technology Stack –</strong> Angular 13 with Spring Boot and designed UI using
+
+							<p style="margin-top: 5px;"><strong>Tech Stack:</strong> Angular 13, Java/Spring Boot,
+								MySQL,
 								Figma</p>
 						</div>
+
 
 					</div>
 				</li>
@@ -309,7 +336,7 @@
 		<div class="container">
 			<div class="row text-center fh5co-heading">
 				<div class="col-md-12">
-					<h3>Education</h3>
+					<h2><strong>Education Qualification</strong></h2>
 				</div>
 			</div>
 			<ul class="timeline">
@@ -365,64 +392,68 @@
 		<div class="row animate-box text-center">
 			<div class="col-md-8 col-md-offset-2 fh5co-heading">
 				<h2 class="section-heading"><strong>Projects</strong></h2>
-				<p style="text-align: justify; margin-top: 30px;">While working on my Academic Projects, I developed
-					distinct knowledge in UI/UX designing, Research Analysis, Database designing, and Software Testing.
+				<p style="text-align: justify; margin-top: 30px;">While working on my Academic and Personal Projects, I
+					developed
+					expertise in UI/UX designing, full-stack development, research analysis, database designing, and
+					software testing.
 				</p>
 			</div>
 		</div>
 		<div class="row">
 
+			<!-- Showtime Movies Project -->
 			<div class="col-md-4">
 				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-5.jpg);"></div>
+					<div class="project-image" style="background-image: url(images/portfolio-8.png);"></div>
 					<div class="project-details">
-						<span class="project-date">April 2020</span>
-						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/ABC-Jobs-Community-Portal.git" target="_blank">ABC
-								Jobs Community Portal</a></h3>
-						<p class="project-description">Developed a website similar to LinkedIn for software developers,
-							enabling users to register, log in, and search and view profiles of other people.</p>
-						<span class="project-tech">Java, Struts2, MySQL database server</span>
-						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/ABC-Jobs-Community-Portal.git"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
+						<span class="project-date">2025</span>
+						<h3 class="project-title"><a href="https://showtime-movie-app.vercel.app/"
+								target="_blank">Showtime Movies</a></h3>
+						<p class="project-description">Built a modern movie web app enabling users to browse, search,
+							and save favorite movies using local storage with support for dark mode and sorting.</p>
+						<span class="project-tech">React, TypeScript, Tailwind CSS, Redux</span>
+						<div class="project-link"><a href="https://showtime-movie-app.vercel.app/" target="_blank">Live
+								Demo | <a href="https://github.com/AbhayWuntkal/ShowtimeMovies">GitHub<i
+										class="icon-arrow-right22"></i></div>
 					</div>
 				</div>
 			</div>
 
+			<!-- Credit Card Fraud Detection -->
 			<div class="col-md-4">
 				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-7.jpg);"></div>
+					<div class="project-image" style="background-image: url(images/portfolio-9.png);"></div>
 					<div class="project-details">
-						<span class="project-date">January 2020</span>
+						<span class="project-date">2025</span>
 						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/ABC-Jobs-Portal-Prototype-Designing.git"
-								target="_blank">ABC Jobs Portal Prototype Designing</a></h3>
-						<p class="project-description">Designed and developed a website prototype for the "ABC jobs Pte
-							Ltd" community portal similar to LinkedIn.</p>
-						<span class="project-tech">Axure RP Software</span>
+								href="https://github.com/AbhayWuntkal/Credit-Card-Fraud-Detection-Using-Machine-Learning"
+								target="_blank">Credit Card Fraud Detection</a></h3>
+						<p class="project-description">Built and evaluated ML models to detect fraudulent
+							transactions using advanced preprocessing, SMOTE, model tuning, and performance metrics.</p>
+						<span class="project-tech">Python, scikit-learn, NumPy, Matplotlib, Seaborn</span>
 						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/ABC-Jobs-Portal-Prototype-Designing.git"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
+								href="https://github.com/AbhayWuntkal/Credit-Card-Fraud-Detection-Using-Machine-Learning"
+								target="_blank">GitHub<i class="icon-arrow-right22"></i></a></div>
 					</div>
 				</div>
 			</div>
 
+			<!-- ABC Cars (Updated Version) -->
 			<div class="col-md-4">
 				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-6.jpg);"></div>
+					<div class="project-image" style="background-image: url(images/portfolio-3.jpg);"></div>
 					<div class="project-details">
-						<span class="project-date">February 2020</span>
+						<span class="project-date">August 2020</span>
 						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/Database-design-development-and-testing.git"
-								target="_blank">Database design, development, and testing</a></h3>
-						<p class="project-description">Designed, developed, and tested a MySQL database for “ABC Jobs
-							Pte Ltd” community portal,
-							optimized the database, and made it ready for deployment.</p>
-						<span class="project-tech">MySQL database, MySQL workbench, DML</span>
+								href="https://github.com/AbhayWuntkal/ABC-Cars-used-cars-sales-portal"
+								target="_blank">ABC Cars - Car Sales Portal</a></h3>
+						<p class="project-description">Developed a secure portal for managing car listings with
+							role-based access using Spring Security and MySQL. Admin features included content
+							moderation.</p>
+						<span class="project-tech">Spring Boot, Spring Security, JSP, MySQL</span>
 						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/Database-design-development-and-testing.git"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
+								href="https://github.com/AbhayWuntkal/ABC-Cars-used-cars-sales-portal"
+								target="_blank">GitHub<i class="icon-arrow-right22"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -435,74 +466,19 @@
 						<h3 class="project-title"><a
 								href="https://github.com/AbhayWuntkal/Know-Your-Neighborhood-website"
 								target="_blank">Know Your Neighborhood (KYN) Website</a></h3>
-						<p class="project-description">Designed and developed a portal with secure register and Google
-							login functionality for users to seamlessly and securely
-							register and log in to the portal.</p>
+						<p class="project-description">Designed a portal with secure Google login allowing users to
+							register, log in, and access neighborhood data.</p>
 						<span class="project-tech">Java, Spring Boot, ReactJs</span>
 						<div class="project-link"><a
 								href="https://github.com/AbhayWuntkal/Know-Your-Neighborhood-website"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-2.jpg);"></div>
-					<div class="project-details">
-						<span class="project-date">March 2021</span>
-						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/Triple-A-AAA-Hosting-service-company"
-								target="_blank">Triple-A (AAA) Hosting service company</a></h3>
-						<p class="project-description">Designed and developed a website for “AAA host solution service
-							company,” where users can view and purchase services.</p>
-						<span class="project-tech">Java, Liferay</span>
-						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/Triple-A-AAA-Hosting-service-company"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-3.jpg);"></div>
-					<div class="project-details">
-						<span class="project-date">August 2020</span>
-						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/ABC-Cars-used-cars-sales-portal"
-								target="_blank">ABC Cars used cars sales portal</a></h3>
-						<p class="project-description">Developed a secure used car sales portal for “ABC Cars Pte Ltd,”
-							enabling users to register, log in, and manage their
-							car listings.</p>
-						<span class="project-tech">Java, Spring MVC, Spring Security, JSP, JDBC, JPA</span>
-						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/ABC-Cars-used-cars-sales-portal"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="project-card animate-box">
-					<div class="project-image" style="background-image: url(images/portfolio-4.jpg);"></div>
-					<div class="project-details">
-						<span class="project-date">July 2020</span>
-						<h3 class="project-title"><a
-								href="https://github.com/AbhayWuntkal/Network-Infrastructure-Development"
-								target="_blank">Network Infrastructure Development</a></h3>
-						<p class="project-description">Designed a network infrastructure for “Lithan Academy” to support
-							30 devices, enabling them to perform various tasks.</p>
-						<span class="project-tech">Cisco Packet Tracer, Creatly</span>
-						<div class="project-link"><a
-								href="https://github.com/AbhayWuntkal/Network-Infrastructure-Development"
-								target="_blank">Read More<i class="icon-arrow-right22"></i></a></div>
+								target="_blank">GitHub<i class="icon-arrow-right22"></i></a></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 <footer id="Contact"
 	style="background-color: #3e2e4c; padding: 20px 0; text-align: center; color: #fff; position: relative;">
@@ -516,9 +492,6 @@
 		</a>
 		<a href="https://github.com/AbhayWuntkal" target="_blank" style="color: #fff; margin: 0 10px;">
 			<i class="icon-github2"></i> GitHub
-		</a>
-		<a href="https://www.instagram.com/abhay.wuntkal/" target="_blank" style="color: #fff; margin: 0 10px;">
-			<i class="icon-instagram"></i> Instagram
 		</a>
 	</div>
 	<div style="margin-top: 20px; font-size: 14px;">
